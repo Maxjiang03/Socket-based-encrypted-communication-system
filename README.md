@@ -1,12 +1,6 @@
 # Socket-based-encrypted-communication-system
 Using digital envelope technology to enable multi-person chat
 
-
-
-![image-20250102155237649](C:\Users\26764\AppData\Roaming\Typora\typora-user-images\image-20250102155237649.png)
-
-![image-20250102155531473](C:\Users\26764\AppData\Roaming\Typora\typora-user-images\image-20250102155531473.png)
-
 用户信息（users）存储格式
 
 CREATE TABLE users (
@@ -30,10 +24,6 @@ insert into users values(0,'user1','111111','wang_yuan');
 insert into users values(0,'user2','111111','ding_zhen');
 
 insert into users values(0,'user3','111111','cxk');
-
-![img](file:///C:/Users/26764/AppData/Local/Temp/msohtmlclip1/01/clip_image002.gif)
-
-![img](file:///C:/Users/26764/AppData/Local/Temp/msohtmlclip1/01/clip_image004.gif)
 
 2、密码库和图形界面库选择：
 
@@ -143,9 +133,5 @@ DB_NAME = 'mini_chat' # 数据库名
 servers_key用来和client_key相互配合实现相对完全的密钥安全分发过程（包括数字信封、加密、数字签名），将成功验证的密钥存储在txt文件中，方便后续通信加密的操作。
 
 server负责连接各个客户端（client_wy)，实现接受解密和加密发送的过程。
-
-   ![img](file:///C:/Users/26764/AppData/Local/Temp/msohtmlclip1/01/clip_image008.gif)
-
-   ![img](file:///C:/Users/26764/AppData/Local/Temp/msohtmlclip1/01/clip_image010.gif)
 
 （3）先实现密钥安全分发，再登录验证（和事先在数据库中存好的账号密码认证）
